@@ -14,6 +14,7 @@ def create_person_list(people: list) -> list:
         name = i["name"]
         age = i["age"]
         Person(name, age)
+
     for i in people:
         family = Person.people[i["name"]]
         if i.get("wife"):
